@@ -1,0 +1,86 @@
+body{
+    margin: 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.left-side{
+    display: flex;
+}
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9rem;
+
+}
+.common{
+    height:22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.common a{
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.common:hover{
+    border-bottom: 1px solid black;
+}
+.common a:hover{
+    color:red;
+}
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.item{
+    position: relative;
+
+}
+.img-bg{
+    height:350px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-txt{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.logo img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.img-darken{
+    transition:1s;
+    filter: brightness(20%);
+
+}
+.two-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pro-img img{
+    width: 100%;
+}
+.pro-content{
+    padding: 30px;
+
+}
+.pro-content h1{
+    color: lightseagreen;
+}
